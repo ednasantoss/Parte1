@@ -1,69 +1,74 @@
 ﻿// Laços de Repetição e Condicionais
 using System;
+using System.Collections.Generic;
 
-
-#region 
 // Parte 1 - Básico
 
+#region
 // 1. Contagem com condição par/impar
 // use um for para imprimir os números 1 a 20. Mostre se é par ou impar ao lado de cada número.
 
-/* for (int i = 1; i <= 20; i++)
-{
-    if (i % 2 == 0)
-    {
-        Console.WriteLine($"o número na posição {i} é par");
-    }
-    else
-    {
-        Console.WriteLine($"o número na posição {i} é impar");
-    }
+// for (int i = 1; i <= 20; i++)
+// {
+//     if (i % 2 == 0)
+//     {
+//         Console.WriteLine($"o número na posição {i} é par");
+//     }
+//     else
+//     {
+//         Console.WriteLine($"o número na posição {i} é impar");
+//     }
 
-} */
+// } 
+#endregion
 
+#region 
 // 2. Somatorio até número positivo
 // use um while para somar números digitados pelo usuario até que ele digite um número negativo.
 
-/*int numero = 0;
-int soma = 0;
+// int numero = 0;
+// int soma = 0;
 
-do
-{
-    Console.WriteLine("Digite um número(Negativo para sair do loop): ");
-    numero = int.Parse(Console.ReadLine());
+// do
+// {
+//     Console.WriteLine("Digite um número(Negativo para sair do loop): ");
+//     numero = int.Parse(Console.ReadLine());
 
-    if (numero >= 0)
-    {
+//     if (numero >= 0)
+//     {
 
-        soma += numero;
+//         soma += numero;
 
-    }
+//     }
 
 
-} while (numero >= 0);
-        Console.WriteLine($"A soma dos números digitados é: {soma}");
-        */
+// } while (numero >= 0);
+//         Console.WriteLine($"A soma dos números digitados é: {soma}");
+#endregion
 
+#region 
 // 3. Tabuada Condicional
 // Gerar a tabuada do 1 até o 10 com for, mas exiba somente os resultados pares.
 
-/* int num = 1;
+// int num = 1;
 
-for (int i = 1; i <= 10; i++)
-{
-    int resultado = num * i;
+// for (int i = 1; i <= 10; i++)
+// {
+//     int resultado = num * i;
 
-    if (resultado % 2 ==0)
-    {
-        Console.WriteLine($"O Resultado {resultado} é par");
-    } 
+//     if (resultado % 2 ==0)
+//     {
+//         Console.WriteLine($"O Resultado {resultado} é par");
+//     } 
     
-} */
+// }
+#endregion
 
+#region 
 // 4. Contador de Vogais 
 // Peça uma palavra e use foreach para contar quantas vogais e consoantes há. use o if para classificar cada letra.
 
-/*Console.WriteLine("Digite uma palavra:");
+Console.WriteLine("Digite uma palavra:");
 
 
 string palavra = Console.ReadLine();
@@ -88,9 +93,9 @@ int consoantes = 0;
 
 Console.WriteLine($"Vogais: {vogais}");
 Console.WriteLine($"Consoantes: {consoantes}");
-*/
+#endregion
 
-
+#region 
 // 5. Números divisiveis por 3 e 5
 // Imprima os números de 1 a 50 e: 
 // Se for divisel por 3 -> escreva "Fizz"
@@ -119,9 +124,10 @@ Console.WriteLine($"Consoantes: {consoantes}");
 // }
 #endregion
 
-#region
+
 // Parte 1 - Intermediário
 
+#region
 // 6. Média com aprovação
 // Peça 5 notas, use um for para calcular a média e um if para mostrar se o aluno está:
 // Aprovado (>=7),
